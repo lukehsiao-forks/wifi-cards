@@ -1,9 +1,9 @@
 all: wifi.pdf
 
 %.pdf: %.tex
-	pdflatex $<
+	tectonic $<
 
 clean:
-	$(RM) *.aux *.log *.pdf
+	$(RM) *.pdf
 
 .PHONY: all clean
